@@ -36,9 +36,8 @@ header {
   justify-content: center;
   width: 20px;
   height: 20px;
-  border: 1.5px solid #fff;
-  font-weight: bold;
   font-size: 13px;
+  line-height: 1;
 }
 
 h1 { font-size: 14px; font-weight: bold; }
