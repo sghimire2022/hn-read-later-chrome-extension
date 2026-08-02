@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="mark">Y</span>
+      <h1>Read later</h1>
+    </div>
+    <span id="count" class="count"></span>
+  </header>
+
+  <nav class="tabs">
+    <button id="tab-unread" class="tab active">Unread</button>
+    <button id="tab-read" class="tab">Read</button>
+  </nav>
+
+  <main id="list"></main>
+
+  <footer>
+    <button id="clear-read" class="ghost">Clear read items</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.hn-rl-link {
+  color: #828282;
+  cursor: pointer;
+}
+
+.hn-rl-link:hover {
+  text-decoration: underline;
+}
+
+.hn-rl-saved {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.hn-rl-icon {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: -2px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.hn-rl-icon svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.3;
+}
+
+.hn-rl-icon:hover {
+  color: #ff6600;
+}
+
+.hn-rl-icon.hn-rl-saved {
+  color: #ff6600;
+}
+
+.hn-rl-icon.hn-rl-saved svg path {
+  fill: currentColor;
+}

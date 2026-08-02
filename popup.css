@@ -1,0 +1,139 @@
+:root {
+  --orange: #ff6600;
+  --ink: #1a1a1a;
+  --muted: #828282;
+  --paper: #f6f6ef;
+  --line: #e4e2d8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 380px;
+  max-height: 560px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  color: var(--ink);
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--orange);
+  color: #fff;
+}
+
+.brand { display: flex; align-items: center; gap: 8px; }
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+h1 { font-size: 14px; font-weight: bold; }
+
+.count { font-size: 12px; opacity: 0.9; }
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.tab {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--orange);
+  font-weight: bold;
+}
+
+main {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.item {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.item .title {
+  color: var(--ink);
+  text-decoration: none;
+  display: block;
+  line-height: 1.35;
+}
+
+.item .title:hover { color: var(--orange); }
+
+.item.read .title { color: var(--muted); }
+
+.meta {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meta a { color: var(--muted); text-decoration: none; }
+.meta a:hover { text-decoration: underline; }
+
+.meta button {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+}
+
+.meta button:hover { color: var(--orange); }
+
+.empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 8px 12px;
+  background: #fff;
+}
+
+.ghost {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.ghost:hover { color: var(--orange); }
